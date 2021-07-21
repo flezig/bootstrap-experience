@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a href="#" class="navbar-brand">USA/Canada Tours</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">О Нас</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Туры</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Блог</a>
+				</li>
+			</ul>
+            <div class="d-flex">
+            	<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+            	<button type="button" class="btn btn-outline-danger ms-3" data-bs-toggle="modal" data-bs-target="">Выйти</button>
+            </div>
+		</div>
+		</div>
+	</nav>
+
+	<!--Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-lablledby="exampleModalLabel">
+		<div class="modal-dialog"> <!--Базовый класс, предопред внешний вид-->
+			<div class="modal-content"> <!--Обёртка модального окна-->
+			    <div class="modal-header">
+			    	<h5 class="modal-title" id="exampleModalLabel">Form</h5> <!--Базовый класс предопред стили заголовка-->
+			    	<button class="btn-close" data-bs-dismiss="modal" aria-label="close"> <!-- data-bs-dismiss let you close the modal if you touch the button-->
+			
+			    </div>
+			    <div class="modal-body">
+			    	<form action="">
+			    		<div class="row" mb-3>
+			    			<label for="inputEmail" class="col-sm-2 col-form-label">Почта</label>
+			    			<div class="col-sm-10">
+			    				<input type="email" class="form-control" id="inputEmail" required> <!--Класс для внеш вида форм-->
+			    			</div>
+			    		</div>
+			    		<div class="row" mb-3>
+			    			<label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+			    			<div class="col-sm-10">
+			    				<input type="password" class="form-control" id="inputPass" required> <!--Класс для внеш вида форм-->
+			    			</div>
+			    		</div>
+			    		<fieldset>
+			    			<div class="row" mb-3>
+			    				<legend class="col-form-label col-sm-4">Как вы узнали о нас?(опционально)</legend>
+			    					<div class="col-sm-10">
+			    						<div class="form-check">
+		    								<input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+		    								<label for="radios1" class="form-check-label">Друзья</label>
+		    						   </div>
+		    						   <div class="form-check">
+		    								<input type="radio" class="form-check-input" name="radios" value="option1" id="radios2" >
+		    								<label for="radios2" class="form-check-label">Google/Yandex</label>
+		    						   </div>
+		    						   <div class="form-check">
+		    								<input type="radio" class="form-check-input" name="radios" value="option1" id="radios3" >
+		    								<label for="radios3" class="form-check-label">Соцсети</label>
+		    						   </div>
+			    				 </div>
+			    			</div>
+			    			<div class="row" mt-3>
+			    				<div class="col-form-label col-sm-2"></div>
+			    				<div class="col-sm-10">
+			    					<div class="form-check">
+			    						<input type="checkbox" id="gridCheck" class="form-check-input">
+			    						<label for="gridCheck" class="form-check-label">Сохранить пароль</label>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</fieldset>
+			    	
+			    	
+			    </div>
+			    <div class="modal-footer">
+			    	<button class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+			    	<button class="btn btn-secondary" type="submit">Сохранить изменения</button>
+			    </div>
+			    </form>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<div class="carousel slide" id="carouselControls" data-bs-ride="carousel"> <!--data-ride = автоматическая смена слайдов-->
+			<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  	</div>
+			<div class="carousel-inner ">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Нью-Йорк">
+					<div class="carousel-caption d-none d-md-block">
+			        <h5><i>Нью-Йорк, Манхэттен</i></h5>
+			        <p>Прекрасные виды открываются днём.</p>
+				    </div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="https://wallpapershome.com/images/wallpapers/miami-3840x2160-5k-4k-wallpaper-ocean-shore-beach-palms-5392.jpg" alt="Майами">
+					<div class="carousel-caption d-none d-md-block">
+			        <h5><i>Майами, Флорида</i></h5>
+			        <p>Прекрасные виды открываются днём.</p>
+				    </div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="https://www.avianca.com/content/dam/avianca_new/destinos/lax/us_lax_playa_07_2880_1620.jpg?lazy=true" alt="Лос-Анджелес">
+					<div class="carousel-caption d-none d-md-block">
+			        <h5><i>Лос-Анджелес, Donwtown</i></h5>
+			        <p>Деловой центр Лос-Анджелеса.</p>
+				    </div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		<div class="container my-5">
+			<div class="row gy-5">
+				<div class="col-md-4 col-sm-12">
+					<img class="w-100" src="https://images.pexels.com/photos/1705074/pexels-photo-1705074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+				</div>
+				<div class="col-md-8 col-sm-12">
+					<h2 class="my-3">О Нас</h2>
+					<p>Нами разработано огромное множество индивидуальных маршрутов путешествий в <strong><i>США</i></strong>, <strong><i>Канаду</i></strong> и различные направления. Это плод совместной творческой работы наших ведущих менеджеров, партнеров и, зачастую, наших любознательных клиентов.
+					Отличительная черта нашей компании – любовь к выполнению трудных задач и созданию уникальных программ путешествий. Наши менеджеры, профессионалы своего дела, помогут избежать ошибок в составлении маршрута, оптимизировать его стоимость, подобрать отели, максимально соответствующие пожеланиям клиента, составить удобный график полетов и переездов.
+					Имея колоссальный <strong><i>опыт</i></strong>, поддержку надежных партнеров, мы всегда нацелены на успех! Наш клиент имеет право на воплощение своей мечты, а мы имеем все необходимые ресурсы, чтобы эту мечту реализовать!
+					С каждым клиентом работает персональный <strong><i>менеджер</i></strong>, полностью отвечающий за заказ, всегда готовый оказать помощь, даже если Вы уже за океаном, а в Москве глубокая ночь. Наш клиент никогда не почувствует себя брошенным и никому не нужным, стоит лишь набрать знакомый номер мобильного телефона.</p>
+				</div>
+			</div>
+			<h2 class="text-center my-5">Наши Партнёры</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-12 text-center">
+				  <div class="partner">
+					<img src="https://icdn.lenta.ru/images/2020/09/21/21/20200921212138973/pic_0df32545f630a670943491042048ac58.png" alt="Сбер">
+					<p>«Сбербанк», Российский финансовый конгломерат, крупнейший универсальный банк России и Восточной Европы</p>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center">
+				  <div class="partner">
+					<img src="https://www.geopoliticalmonitor.com/wp-content/uploads/2016/07/Gazlogo.jpg" alt="Газпром">
+					<p>«Газпром», Российская транснациональная энергетическая компания</p>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center">
+				  <div class="partner">
+					<img src="https://www.logo.wine/a/logo/Aeroflot/Aeroflot-Logo.wine.svg" alt="Аэрофлот">
+					<p>«Аэрофлот» является крупнейшим авиаперевозчиком России и одним из крупнейших в Европе.</p>
+				  </div>
+			   </div>
+			</div>
+		</div>
+              <h2 class="text-center my-5">Наши Сотрудники</h2>
+              <div class="row"> 
+              	<div class="col-md-4 col-sm-12 text-center">
+              	  <div class="employer">
+					<h4>Джефф Безос</h4>
+					<img src="https://mc.today/wp-content/uploads/2019/08/bezos-final-0404-compressor-e1536081509164-1024x783-768x587.jpg" alt="Джефф Безос">
+					<p>Предприниматель, богатейший человек планеты</p>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center">
+				  <div class="employer">
+					<h4>Илон Маск</h4>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/250px-Elon_Musk_Royal_Society.jpg" alt="Илон Маск">
+					<p>Предприниматель, генеральный директор SpaceX</p>
+				  </div>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center">
+				  <div class="employer">
+					<h4>Дональд Трамп</h4>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/250px-Donald_Trump_official_portrait.jpg" alt="Дональд Трамп">
+					<p>Да, да, вы не ослышались, 45-ый президент США сотрудник нашей компании</p>
+				 </div>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center">
+			<h1 id="most-popular">Самые популярные направления</h1>
+			<p>
+			<a href="#multiCollapse1" data-bs-toggle="collapse" aria-controls="multiCollapse1" role="button" aria-expanded="false" class="btn btn-secondary">Техас</a>
+			<button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="#multiCollapse2">Калифорния</button>
+			<button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target="#multiCollapse3" aria-expanded="false" aria-controls="#multiCollapse3">Другие штаты</button>
+			<button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="#multiCollapse1 multiCollapse2 multiCollapse3" >ВСЕ</button>
+		</p>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="collapse multi-collapse show" id="multiCollapse3">
+					<img class="w-100" src="https://habrastorage.org/getpro/habr/upload_files/724/742/2df/7247422df6f0c4577d0ba0f1e5fb6fb7.jpeg" alt="Колорадо">
+					<div class="card card-body">
+		      			<h5 class="card-title">Колорадо</h5>
+		      			<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+						</svg> 7 дней/ от <span class="price">125 000 Р.</span> за 1 чел.</p>
+	      				<a href="#" class="btn btn-primary">Подробнее</a>
+	      		    </div>
+	      	    </div>
+	      	    <div class="collapse multi-collapse show" id="multiCollapse3">
+					<img class="w-100" src="https://s.zagranitsa.com/images/blogs/2672/original/4cef47ca4a3a00ca1a3607391b4db549.jpg?1458214396" alt="Нью-Йорк - Лос-Анджелес">
+					<div class="card card-body">
+		      			<h5 class="card-title">Нью-Йорк - Лос-Анджелес</h5>
+		      			<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+						</svg> 16 дней/ от <span class="price">210 000 Р.</span> за 1 чел.</p>
+	      				<a href="#" class="btn btn-primary">Подробнее</a>
+	      		    </div>
+	      	    </div>
+	      	</div>
+			<div class="col-sm-6">
+				<div class="collapse multi-collapse show" id="multiCollapse1" >
+					<img class="w-100" src="https://s9.travelask.ru/system/images/files/000/311/013/wysiwyg_jpg/0_17a925_8b6d4132_orig.jpg?1498335229" alt="Техас">
+					<div class="card card-body">
+					  <h5 class="card-title">Техас</h5>
+		      			<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+						</svg> 10 дней/ от <span class="price">150 000 Р.</span> за 1 чел.</p>
+	      				<a href="#" class="btn btn-primary">Подробнее</a>
+					</div> 
+				</div>
+				<div class="collapse my-3 multi-collapse show" id="multiCollapse2" >
+					<img class="w-100" src="https://st.depositphotos.com/1222104/1318/i/950/depositphotos_13186067-stock-photo-golden-gate-bridge-vivid-day.jpg" alt="Калифорния">
+					<div class="card card-body">
+					  <h5 class="card-title">Калифорния</h5>
+		      			<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+						</svg> 14 дней/ от <span class="price">180 000 Р.</span> за 1 чел.</p>
+	      				<a href="#" class="btn btn-primary">Подробнее</a>
+					</div> 
+				</div>
+				<div class="collapse my-3 multi-collapse show" id="multiCollapse2" >
+					<img class="w-100" src="https://img-fotki.yandex.ru/get/1028622/125986559.a5/0_22a291_70f2bcbe_XL.jpg" alt="Лос-Анджелес - Сан-Диего">
+					<div class="card card-body">
+					  <h5 class="card-title">Лос-Анджелес - Сан-Диего</h5>
+		      			<p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+						</svg> 5 дней/ от <span class="price">130 000 Р.</span> за 1 чел.</p>
+	      				<a href="#" class="btn btn-primary">Подробнее</a>
+					</div> 
+				</div>
+
+
+			</div>
+		</div>
+	  </div><!--container-->
+	</main>
+	  
+
+      <footer class="pt-4 mt-md-4 pt-md-5 border-top bg-light text-muted text-center text-small ">
+        <div class="row"></div>
+           <div class="col-12 col-md">
+             <p class="mb-1">&copy; 2020-2021 USA/Canada Tours</p>
+             <ul class="list-inline">
+	           <li class="list-inline-item"><a href="#">Конфиденциальность</a></li>
+	           <li class="list-inline-item"><a href="#">Пользовательское соглашение</a></li>
+	           <li class="list-inline-item"><a href="#">поддержка</a></li>
+             </ul>
+           </div> 
+      </footer>
+    </div>
+	
+
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
